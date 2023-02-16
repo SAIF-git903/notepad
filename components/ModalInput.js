@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Text, View, StyleSheet, TextInput, Keyboard, Pressable, Dimensions } from 'react-native'
+import { Text, View, StyleSheet, TextInput, Keyboard, Pressable } from 'react-native'
 import { addDoc, collection, doc, setDoc } from "firebase/firestore"
 import { useNavigation } from '@react-navigation/native'
 import { db } from '../firebase'

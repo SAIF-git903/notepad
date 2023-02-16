@@ -20,10 +20,7 @@ function App() {
 
   return (
     <NavigationContainer theme={myTheme} >
-      <Stack.Navigator screenOptions={
-        {
-          headerShown: false,
-        }}>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name='Home' component={Home} />
         <Stack.Screen name='Modal' component={ModalInput} />
       </Stack.Navigator>

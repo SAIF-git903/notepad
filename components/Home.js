@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { StyleSheet, Text, View, Modal, TouchableOpacity, Pressable, FlatList, Alert } from 'react-native';
 import ModalInput from './ModalInput';
-import { collection, onSnapshot, query, orderBy, doc, deleteDoc, getDocs, where } from "firebase/firestore";
+import { collection, onSnapshot, query, orderBy, doc, deleteDoc } from "firebase/firestore";
 import { db } from '../firebase';
 import moment from 'moment';
 import Feather from 'react-native-vector-icons/Feather';
@@ -70,25 +70,6 @@ const Home = () => {
         const renderedData = todos.map(item => item.Title)
         const filteredData = renderedData.filter(item => item.includes(txt))
         console.log(filteredData)
-
-        // console.log(data)
-        // const filteredData = renderedData.filter(data => data.Title)
-        // console.log(filteredData, "//////")
-
-        // const q = query(collection(db, "data"), where("Title", "==", txt));
-        // const snapshot = await getDocs(q);
-        // const allData = snapshot.map(doc => ({ ...doc.data(), id: doc.id() }));
-        // const filteredData = allData.map(item => item.Title.toLowerCase().includes(txt.toLowerCase()))
-        // setSearch(filteredData);
-
-        // snapshot.forEach((doc) => {
-        //     if (doc.data().tolowerCase().includes(txt.tolowerCase())) {
-        //         const data = doc.data();
-        //         setSearch(data)
-        //     } else {
-        //         setSearch(false)
-        //     }
-        // });
     }
 
 
