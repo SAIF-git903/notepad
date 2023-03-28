@@ -3,8 +3,7 @@ import Home from './components/Home'
 import ModalInput from './components/ModalInput'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { GestureHandlerRootView } from 'react-native-gesture-handler'
-import { SafeAreaView } from 'react-native-safe-area-context'
+
 
 const Stack = createNativeStackNavigator()
 
@@ -17,7 +16,6 @@ const myTheme = {
 }
 
 function App() {
-
   return (
     <NavigationContainer theme={myTheme} >
       <Stack.Navigator screenOptions={{ headerShown: false }}>

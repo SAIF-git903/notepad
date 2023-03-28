@@ -2,6 +2,7 @@ import { StyleSheet, View, TextInput } from 'react-native'
 import React, { useState } from 'react'
 import Feather from "react-native-vector-icons/Feather"
 
+
 const SearchBar = (props) => {
 
     const { SearchTodo } = props

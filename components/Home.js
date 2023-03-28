@@ -10,6 +10,7 @@ import Data from './Data';
 import SearchBar from './SearchBar';
 import 'firebase/database';
 
+
 const Home = () => {
 
     const [modal, setModal] = useState(false)
